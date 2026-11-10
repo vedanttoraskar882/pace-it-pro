@@ -7,8 +7,8 @@
 
   /* Ink & Typography Colours */
   --color-ink: #0f213a;
-  --color-ink-secondary: #2f4158;
-  --color-ink-muted: #4e5f75;
+  --color-ink-secondary: #2b3d54;
+  --color-ink-muted: #4b5c72;
 
   /* Teal Brand Accent */
   --color-accent: #0e6a63;
@@ -33,12 +33,17 @@
   --color-border-strong: #c2bcac;
 
   /* Typography */
-  --font-sans: 'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: ui-monospace, 'Cascadia Mono', 'SFMono-Regular', Consolas, monospace;
 
-  --text-hero: clamp(2.125rem, 4.1vw, 3.125rem);
-  --text-h2: clamp(1.65rem, 2.7vw, 2.25rem);
-  --text-lead: clamp(1.03rem, 1.3vw, 1.125rem);
+  --text-hero: clamp(2.35rem, 4.4vw, 3.375rem);
+  --text-h2: clamp(1.85rem, 3vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 1.8vw, 1.45rem);
+  --text-lead: clamp(1.03125rem, 1.25vw, 1.125rem);
+  --text-body: 0.96875rem;
+  --text-sm: 0.84375rem;
+  --text-xs: 0.75rem;
 
   /* Layout & Spacing */
   --container-max: 1140px;
@@ -90,8 +95,11 @@ body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-ink);
+  font-family: var(--font-sans);
   font-size: 1rem;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -99,7 +107,11 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
 p,
 ul,
 ol,

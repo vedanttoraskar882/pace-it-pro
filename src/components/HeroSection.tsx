@@ -9,10 +9,6 @@ export function HeroSection({ onOpenPilotModal }: HeroSectionProps) {
     <section id="home" className="hero-section" aria-labelledby="hero-heading">
       <div className="container hero-grid">
         <div className="hero-copy">
-          <p className="hero-eyebrow">
-            <span className="eyebrow-dot" aria-hidden="true" />
-            In development · Key Stage 4 GCSE Science
-          </p>
           <h1 id="hero-heading" className="hero-title">
             Can your pupils explain the experiments they’ve done?
           </h1>

@@ -44,7 +44,6 @@ export function PilotModal({
   const wasOpenRef = useRef(false);
 
   const titleId = useId();
-  const noticeId = useId();
 
   useEffect(() => {
     if (isOpen && !wasOpenRef.current) {
@@ -208,7 +207,6 @@ export function PilotModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        aria-describedby={noticeId}
       >
         <div className="modal-header">
           <div>
@@ -226,11 +224,6 @@ export function PilotModal({
             <CloseIcon />
           </button>
         </div>
-
-        <p id={noticeId} className="modal-notice">
-          This preview saves your details in this browser only. Your request is
-          not sent to the PractiTrace team.
-        </p>
 
         {isSaved ? (
           <div className="modal-status modal-status-success" role="status" aria-live="polite">

@@ -58,16 +58,11 @@ export function AboutSection() {
 
         <aside className="founder-card" aria-labelledby="founder-heading">
           <div className="founder-header">
-            <div className="founder-monogram" aria-hidden="true">
-              PJ
-            </div>
-            <div>
-              <p className="card-kicker">Founder profile</p>
-              <h3 id="founder-heading" className="founder-name">
-                Priyanka Jhanji
-              </h3>
-              <p className="founder-role">Founder and Chief Executive</p>
-            </div>
+            <p className="card-kicker">Founder profile</p>
+            <h3 id="founder-heading" className="founder-name">
+              Priyanka Jhanji
+            </h3>
+            <p className="founder-role">Founder and Chief Executive</p>
           </div>
 
           <p className="founder-bio">
